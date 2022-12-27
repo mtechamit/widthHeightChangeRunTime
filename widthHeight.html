@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amit Soni</title>
+
+
+</head>
+
+<body>
+
+<h1 id="width" style="background:#ccc"></h1>
+
+</body>
+<script>
+	// set the initial width
+	var viewportWidth = document.documentElement.clientWidth;
+	var el = document.getElementById("width");
+	el.innerHTML = viewportWidth + "px";
+    el.style.width=viewportWidth+"px"
+    el.style.height=viewportWidth*2+"px"
+    
+
+	// on resize
+	window.addEventListener('resize', function(event){
+
+		var viewportWidth = document.documentElement.clientWidth;
+		var el = document.getElementById("width");
+		el.innerHTML = viewportWidth + "px";
+        el.style.width=viewportWidth+"px"
+
+	});
+</script>
+</html>
+
+
